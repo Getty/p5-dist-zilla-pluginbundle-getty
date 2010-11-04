@@ -12,7 +12,6 @@ This is the plugin bundle that GETTY uses.  It is equivalent to:
 
   [@Basic]
 
-  [AutoPrereqs]
   [Git::NextVersion]
   [PkgVersion]
   [MetaConfig]
@@ -73,9 +72,6 @@ sub configure {
     if $self->is_task and $self->weaver_config ne '@GETTY';
 
   $self->add_bundle('@Basic');
-
-  $self->add_plugins('AutoPrereqs');
-
 
   unless ($self->manual_version) {
     if ($self->is_task) {
