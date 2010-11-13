@@ -19,6 +19,7 @@ This is the plugin bundle that GETTY uses.  It is equivalent to:
   [NextRelease]
   [PodSyntaxTests]
   [GithubMeta]
+  [LocalInstall]
 
   [PodWeaver]
   config_plugin = @GETTY
@@ -101,6 +102,7 @@ sub configure {
     PodSyntaxTests
     Repository
 	GithubMeta
+	LocalInstall
   ));
 
   $self->add_plugins(

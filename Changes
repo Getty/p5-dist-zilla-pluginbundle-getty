@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+	- Added LocalInstall
 
 0.002     2010-11-04 22:57:11 Europe/Berlin
 
