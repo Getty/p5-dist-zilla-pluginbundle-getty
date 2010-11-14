@@ -28,6 +28,7 @@ This is the plugin bundle that GETTY uses.  It is equivalent to:
 
   [@Git]
   tag_format = %v
+  push_to = origin
 
 If the C<task> argument is given to the bundle, PodWeaver is replaced with
 TaskWeaver and Git::NextVersion is replaced with AutoVersion.  If the
