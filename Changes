@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.005     2010-12-08 03:56:37 Europe/Berlin
 	- Added Dist::Zilla::Plugin::Authority
 
 0.004     2010-11-14 05:26:34 Europe/Berlin
