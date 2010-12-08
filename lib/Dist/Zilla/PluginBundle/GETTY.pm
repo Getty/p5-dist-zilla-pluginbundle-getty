@@ -21,6 +21,10 @@ This is the plugin bundle that GETTY uses.  It is equivalent to:
   [GithubMeta]
   [LocalInstall]
 
+  [Authority]
+  authority = cpan:GETTY
+  do_metadata = 1
+
   [PodWeaver]
   config_plugin = @GETTY
 
@@ -95,16 +99,23 @@ sub configure {
     }
   }
 
-  $self->add_plugins(qw(
-    PkgVersion
-    MetaConfig
-    MetaJSON
-    NextRelease
-    PodSyntaxTests
-    Repository
-	GithubMeta
-	LocalInstall
-  ));
+	$self->add_plugins(qw(
+		PkgVersion
+		MetaConfig
+		MetaJSON
+		NextRelease
+		PodSyntaxTests
+		Repository
+		GithubMeta
+		LocalInstall
+	));
+
+	$self->add_plugins([
+		'Authority' => {
+			authority => 'cpan:GETTY',
+			do_metadata => 1,
+		}
+	]);
 
   $self->add_plugins(
     [ Prereqs => 'TestMoreWithSubtests' => {
