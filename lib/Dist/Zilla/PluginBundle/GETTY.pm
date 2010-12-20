@@ -19,7 +19,7 @@ This is the plugin bundle that GETTY uses.  It is equivalent to:
   [NextRelease]
   [PodSyntaxTests]
   [GithubMeta]
-  [LocalInstall]
+  [InstallRelease]
 
   [Authority]
   authority = cpan:GETTY
@@ -107,7 +107,7 @@ sub configure {
 		PodSyntaxTests
 		Repository
 		GithubMeta
-		LocalInstall
+		InstallRelease
 	));
 
 	$self->add_plugins([
