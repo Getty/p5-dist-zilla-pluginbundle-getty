@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.007     2011-04-22 21:05:53 Europe/Berlin
 	- Added InstallRelease option for custom command cpanm .
 
 0.006     2010-12-20 21:19:55 Europe/Berlin
