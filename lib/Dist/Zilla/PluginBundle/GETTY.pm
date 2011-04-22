@@ -20,6 +20,7 @@ This is the plugin bundle that GETTY uses.  It is equivalent to:
   [PodSyntaxTests]
   [GithubMeta]
   [InstallRelease]
+  install_command = cpanm .
 
   [Authority]
   authority = cpan:GETTY
@@ -107,8 +108,13 @@ sub configure {
 		PodSyntaxTests
 		Repository
 		GithubMeta
-		InstallRelease
 	));
+
+	$self->add_plugins([
+		'InstallRelease' => {
+			install_command => 'cpanm .',
+		}
+	]);
 
 	$self->add_plugins([
 		'Authority' => {
