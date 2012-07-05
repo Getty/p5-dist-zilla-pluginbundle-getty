@@ -1,5 +1,5 @@
 package Dist::Zilla::PluginBundle::GETTY;
-# ABSTRACT: BeLike::GETTY when you build your dists
+# ABSTRACT: B<DEPRECATED> PLEASE USE L<Dist::Zilla::PluginBundle::Author::GETTY> instead
 
 use Moose;
 use Moose::Autobox;
@@ -8,7 +8,7 @@ with 'Dist::Zilla::Role::PluginBundle::Easy';
 
 =head1 DESCRIPTION
 
-This is the plugin bundle that GETTY uses.  It is equivalent to:
+B<DEPRECATED> This is the plugin bundle that GETTY uses.  It is equivalent to:
 
   [@Basic]
 
